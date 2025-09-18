@@ -16,6 +16,11 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+  margin-top: 10px;
+}
+
 html {
   font-size: 62.5%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -75,6 +80,7 @@ h3 {
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 4rem;
+  text-align: center;
 }
 
 h4 {
@@ -130,6 +136,7 @@ progress {
 
 .btn:not([disabled]):hover {
   background-color: var(--color-darkest);
+  color: white;
 }
 
 .btn-option:not([disabled]):hover {
@@ -205,12 +212,19 @@ progress {
 }
 
 .timer {
+  text-align: center;
   float: left;
   font-size: 1.8rem;
   color: var(--color-medium);
   border: 2px solid var(--color-dark);
   padding: 1.35rem 2.8rem;
   border-radius: 100px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
